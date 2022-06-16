@@ -3,6 +3,7 @@ import { Route, Router, Routes, useLocation, useNavigate } from 'react-router-do
 import './App.css';
 import Home from './components/home/Home';
 import Login from './components/login/Login';
+import Farohiddin from './components/farohiddin/Farohiddin';
 
 function App() {
   let local = window.localStorage.getItem('test')
@@ -23,6 +24,7 @@ function App() {
       <Route path='/home' element={<Home />}/>
       <Route path='/login' element={<Login />} />
      </Routes>
+     <Farohiddin/>
     </div>
   );
 }
