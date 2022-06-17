@@ -4,6 +4,7 @@ import './App.css';
 import Home from './components/home/Home';
 import Login from './components/login/Login';
 import Farohiddin from './components/farohiddin/Farohiddin';
+import Botirjon from './components/botirjon/Botirjon';
 
 function App() {
   let local = window.localStorage.getItem('test')
@@ -25,6 +26,7 @@ function App() {
       <Route path='/login' element={<Login />} />
      </Routes>
      <Farohiddin/>
+     <Botirjon />
     </div>
   );
 }
